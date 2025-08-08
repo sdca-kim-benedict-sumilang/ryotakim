@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Babibirthday
+    </title>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&family=Quicksand:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Music -->
+    <audio id="backgroundMusic" autoplay loop>
+        <source src="song/SZA - Saturn.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <!-- Music Controls -->
+    <div class="music-controls">
+        <div class="controls-header">🎵 Music Controls</div>
+        <div class="control-buttons">
+            <button id="playPauseBtn" class="control-btn">⏸️</button>
+            <button id="muteBtn" class="control-btn">🔊</button>
+        </div>
+        <div class="volume-control">
+            <label for="volumeSlider">Volume:</label>
+            <input type="range" id="volumeSlider" min="0" max="1" step="0.1" value="0.5">
+            <span id="volumeDisplay">50%</span>
+        </div>
+    </div>
+    
+    <!-- Floating Hearts Background -->
+    <div class="hearts-container">
+        <div class="heart heart-1">💖</div>
+        <div class="heart heart-2">💕</div>
+        <div class="heart heart-3">💗</div>
+        <div class="heart heart-4">💝</div>
+        <div class="heart heart-5">💘</div>
+        <div class="heart heart-6">💖</div>
+        <div class="heart heart-7">💕</div>
+        <div class="heart heart-8">💗</div>
+        <div class="heart heart-9">💝</div>
+        <div class="heart heart-10">💘</div>
+    </div>
+    
+    <div class="content">
+        <!-- Center content with orbiting images -->
+        <div class="orbit-container">
+            <div class="center-content">
+                <h1>Happy Birthday Babi<3</h1>
+                <p>I love you from the bottom of my heart<3</p>
+                <button id="messageButton" class="message-button">Click Me</button>
+            </div>
+            
+            <!-- Orbiting images -->
+            <div class="orbit-path">
+                <div class="decorative-box orbit-image-1">
+                    <img src="pictures/1st_img.jpg" alt="Beautiful picture 1" class="box-image">
+                </div>
+                <div class="decorative-box orbit-image-2">
+                    <img src="pictures/2nd_img.jpg" alt="Beautiful picture 2" class="box-image">
+                </div>
+                <div class="decorative-box orbit-image-3">
+                    <img src="pictures/3rd_img.jpg" alt="Beautiful picture 3" class="box-image">
+                </div>
+                <div class="decorative-box orbit-image-4">
+                    <img src="pictures/4th_img.jpg" alt="Beautiful picture 4" class="box-image">
+                </div>
+                <div class="decorative-box orbit-image-5">
+                    <img src="pictures/5th_img.jpg" alt="Beautiful picture 5" class="box-image">
+                </div>
+                <div class="decorative-box orbit-image-6">
+                    <img src="pictures/6th_img.jpg" alt="Beautiful picture 6" class="box-image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Message Dialog -->
+    <div id="messageDialog" class="message-dialog">
+        <div class="dialog-content">
+            <span class="close-button">&times;</span>
+            <h2>My Special Message</h2>
+            <p>Happy Birthday Jane! This is a simple gift from me :)
+Eto yung pinagpupuyatan ko kagabi hehe. I know you mentioned before that your day is nothing much special but I beg to disagree! :> It’s your 20th birthday! It’s a personal milestone! Look back in the past and be proud of the challenges you won that made you strong up to this point of your life!!!
+
+Besides, I also wanna say that I’m grateful that I met you! Everything that I do felt like it had purpose ever since I met you!
+
+And I hope this year brings you closer to your dreams, opens more opportunities for you, and surrounds you with people who truly care for you. You deserve all the love, happiness, and success in the world. Keep shining, keep smiling, and keep being the amazing person you are. Always remember, I’ll be rooting for you in every chapter of your life. ILYSM💛</p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
